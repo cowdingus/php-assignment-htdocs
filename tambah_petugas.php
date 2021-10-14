@@ -2,10 +2,10 @@
 include "utilities.php";
 
 if ($_POST) {
-	$nama = $_POST["nama_petugas"];
-	$username = $_POST["username"];
-	$password = $_POST["password"];
-	$level = $_POST["level"];
+	$nama = trim($_POST["nama_petugas"]);
+	$username = trim($_POST["username"]);
+	$password = trim($_POST["password"]);
+	$level = trim($_POST["level"]);
 
 	$redirect_to_url = generate_redirect("tambah_petugas.html");
 

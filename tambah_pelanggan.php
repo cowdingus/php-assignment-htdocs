@@ -2,9 +2,9 @@
 include "utilities.php";
 
 if ($_POST) {
-	$nama = $_POST["nama"];
-	$alamat = $_POST["alamat"];
-	$no_telepon = $_POST["telp"];
+	$nama = trim($_POST["nama"]);
+	$alamat = trim($_POST["alamat"]);
+	$no_telepon = trim($_POST["telp"]);
 
 	if (empty($nama)) {
 		echo generate_alert_message("Nama pelanggan tidak boleh kosong");

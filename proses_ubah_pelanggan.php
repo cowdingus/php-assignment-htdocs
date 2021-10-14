@@ -2,10 +2,10 @@
 include "utilities.php";
 
 if ($_POST) {
-	$id = $_POST["id"];
-	$nama = $_POST["nama"];
-	$alamat = $_POST["alamat"];
-	$telepon = $_POST["telp"];
+	$id = trim($_POST["id"]);
+	$nama = trim($_POST["nama"]);
+	$alamat = trim($_POST["alamat"]);
+	$telepon = trim($_POST["telp"]);
 
 	$redirect_to_url = generate_redirect("tampil_pelanggan.php");
 

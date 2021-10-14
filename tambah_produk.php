@@ -2,9 +2,9 @@
 include "utilities.php";
 
 if ($_POST) {
-	$nama = $_POST["nama_produk"];
-	$deskripsi = $_POST["deskripsi"];
-	$harga = $_POST["harga"];
+	$nama = trim($_POST["nama_produk"]);
+	$deskripsi = trim($_POST["deskripsi"]);
+	$harga = trim($_POST["harga"]);
 
 	$upload_path = "uploads/";
 

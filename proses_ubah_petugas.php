@@ -2,11 +2,11 @@
 include "utilities.php";
 
 if ($_POST) {
-	$id = $_POST["id"];
-	$nama = $_POST["nama"];
-	$username = $_POST["username"];
-	$password = $_POST["password"];
-	$level = $_POST["level"];
+	$id = trim($_POST["id"]);
+	$nama = trim($_POST["nama"]);
+	$username = trim($_POST["username"]);
+	$password = trim($_POST["password"]);
+	$level = trim($_POST["level"]);
 
 	$redirect_to_url = generate_redirect("tampil_petugas.php");
 
