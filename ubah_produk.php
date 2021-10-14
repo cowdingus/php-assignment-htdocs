@@ -43,8 +43,7 @@ if ($stmt = $conn->prepare($query)) {
 			</div>
 			<div class="form-group mb-3">
 				<label for="input-deskripsi" class="form-label">Deskripsi</label>
-				<textarea class="form-control" name="deskripsi" id="input-deskripsi" rows="3"><?=$deskripsi?>
-				</textarea>
+				<textarea class="form-control" name="deskripsi" id="input-deskripsi" rows="3"><?=$deskripsi?></textarea>
 			</div>
 			<div class="form-group mb-3">
 				<label for="input-harga" class="form-label">Harga</label>
