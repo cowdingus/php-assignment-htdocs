@@ -8,6 +8,8 @@ if ($_POST) {
 	$password = trim($_POST["password"]);
 	$level = trim($_POST["level"]);
 
+	$password = md5($password);
+
 	$redirect_to_url = generate_redirect("tampil_petugas.php");
 
 	if (empty($id)) {
