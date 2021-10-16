@@ -29,7 +29,7 @@ CREATE TABLE `detail_transaksi` (
   `qty` int(11) NOT NULL,
   `subtotal` int(11) NOT NULL,
   PRIMARY KEY (`id_detail_transaksi`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `detail_transaksi` (
 
 LOCK TABLES `detail_transaksi` WRITE;
 /*!40000 ALTER TABLE `detail_transaksi` DISABLE KEYS */;
-INSERT INTO `detail_transaksi` VALUES (1,3,7,1,12000),(2,4,7,1,12000),(3,4,7,1,12000),(4,5,8,1,180000),(5,5,7,1,12000);
+INSERT INTO `detail_transaksi` VALUES (11,9,7,1,12000),(12,9,8,1,180000),(13,10,7,1,12000),(14,11,7,2,24000),(15,11,8,2,360000);
 /*!40000 ALTER TABLE `detail_transaksi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -135,7 +135,7 @@ CREATE TABLE `transaksi` (
   `id_petugas` int(11) NOT NULL,
   `tgl_transaksi` date NOT NULL,
   PRIMARY KEY (`id_transaksi`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -144,7 +144,7 @@ CREATE TABLE `transaksi` (
 
 LOCK TABLES `transaksi` WRITE;
 /*!40000 ALTER TABLE `transaksi` DISABLE KEYS */;
-INSERT INTO `transaksi` VALUES (1,1,4,'2021-10-16'),(2,1,3,'2021-10-16'),(3,1,3,'2021-10-16'),(4,1,3,'2021-10-16'),(5,1,3,'2021-10-16');
+INSERT INTO `transaksi` VALUES (9,4,3,'2021-10-16'),(10,4,3,'2021-10-16'),(11,4,3,'2021-10-16');
 /*!40000 ALTER TABLE `transaksi` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -157,4 +157,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-16 14:37:05
+-- Dump completed on 2021-10-16 22:28:46
