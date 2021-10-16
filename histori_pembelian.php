@@ -17,15 +17,14 @@ include "header.php";
 		<?php
 		include "db.php";
 
-$query_result = $conn->query("SELECT * FROM transaksi, detail_transaksi, produk, petugas, pelanggan"
-	. " WHERE detail_transaksi.id_transaksi = transaksi.id_transaksi"
-	. " AND detail_transaksi.id_produk = produk.id_produk"
-	. " AND transaksi.id_petugas = petugas.id_petugas"
-	. " AND transaksi.id_pelanggan = pelanggan.id_pelanggan");
+		$query_result = $conn->query("SELECT * FROM transaksi, detail_transaksi, produk, petugas, pelanggan"
+			. " WHERE detail_transaksi.id_transaksi = transaksi.id_transaksi"
+			. " AND detail_transaksi.id_produk = produk.id_produk"
+			. " AND transaksi.id_petugas = petugas.id_petugas"
+			. " AND transaksi.id_pelanggan = pelanggan.id_pelanggan");
 
 		$index = 0;
-		while ($transaksi = $query_result->fetch_assoc())
-		{
+		while ($transaksi = $query_result->fetch_assoc()) {
 			$index++;
 			echo "<tr>";
 			echo "<td>{$index}</td>";
