@@ -1,7 +1,7 @@
 <?php
 include "utilities.php";
 
-$redirect_to_url = generate_redirect("login.php");
+$redirect_to_url = generate_redirect("login.html");
 
 if ($_POST) {
 	$username = trim($_POST['username']);
