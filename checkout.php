@@ -34,6 +34,8 @@ if ($cart && count($cart) > 0) {
 		die("Failed to prepare statement ({$conn->errno}): {$conn->error}");
 	}
 
+	assert($id_transaksi === -1, "id_transaksi is invalid");
+
 	$query = "INSERT INTO detail_transaksi (id_transaksi, id_produk, qty, subtotal) VALUES (?, ?, ?, ?)";
 
 	if ($stmt = $conn->prepare($query)) {
