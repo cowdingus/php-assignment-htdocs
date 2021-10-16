@@ -11,8 +11,8 @@ include "header.php";
 	if ($stmt = $conn->prepare($query)) {
 		$stmt->execute();
 
-		if ($stmt->error) {
-			die("Failed to execute MySQLi statement: " . $stmt->error);
+		if ($stmt->errno) {
+			die("Failed to execute MySQLi statement ({$stmt->errno}): " . $stmt->error);
 		}
 
 		$stmt->bind_result($id, $nama, $deskripsi, $harga, $foto_produk);
