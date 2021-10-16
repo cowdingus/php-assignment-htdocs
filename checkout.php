@@ -6,13 +6,13 @@ include "utilities.php";
 
 $cart = $_SESSION['cart'];
 
-if (count($cart) > 0) {
+if ($cart && count($cart) > 0) {
 	$query = "INSERT INTO transaksi (id_pelanggan, id_petugas, tgl_transaksi) VALUES (?, ?, ?)";
 
 	$id_transaksi = -1;
 
 	if ($stmt = $conn->prepare($query)) {
-		$id_pelanggan = 1;
+		$id_pelanggan = $_POST["id_pelanggan"];
 		$id_petugas = $_SESSION["id_petugas"];
 		$tgl_transaksi = date("Y-m-d");
 
@@ -60,10 +60,9 @@ if (count($cart) > 0) {
 	$conn->close();
 
 	unset($_SESSION['cart']);
-	echo generate_alert_message("Anda berhasil membeli buku");
+	echo generate_alert_message("Anda berhasil membeli ayam");
 	echo generate_redirect("histori_pembelian.php");
 } else {
-	echo generate_alert_message("Cart anda kosong");
+	echo generate_alert_message("Keranjang anda kosong");
+	echo generate_redirect("keranjang.php");
 }
-
-echo generate_alert_message("WHAT");
