@@ -29,7 +29,7 @@ CREATE TABLE `detail_transaksi` (
   `qty` int(11) NOT NULL,
   `subtotal` int(11) NOT NULL,
   PRIMARY KEY (`id_detail_transaksi`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,6 +38,7 @@ CREATE TABLE `detail_transaksi` (
 
 LOCK TABLES `detail_transaksi` WRITE;
 /*!40000 ALTER TABLE `detail_transaksi` DISABLE KEYS */;
+INSERT INTO `detail_transaksi` VALUES (1,3,7,1,12000),(2,4,7,1,12000),(3,4,7,1,12000),(4,5,8,1,180000),(5,5,7,1,12000);
 /*!40000 ALTER TABLE `detail_transaksi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,7 +55,7 @@ CREATE TABLE `pelanggan` (
   `alamat` text NOT NULL,
   `telp` varchar(50) NOT NULL,
   PRIMARY KEY (`id_pelanggan`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +64,7 @@ CREATE TABLE `pelanggan` (
 
 LOCK TABLES `pelanggan` WRITE;
 /*!40000 ALTER TABLE `pelanggan` DISABLE KEYS */;
-INSERT INTO `pelanggan` VALUES (3,'Mudi Bin Mujib','Jl. Mars','0895');
+INSERT INTO `pelanggan` VALUES (4,'Mudi Bin Mudi','Jl. Mudi Bumi','089520001010');
 /*!40000 ALTER TABLE `pelanggan` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -81,7 +82,7 @@ CREATE TABLE `petugas` (
   `password` varchar(100) NOT NULL,
   `level` varchar(100) NOT NULL,
   PRIMARY KEY (`id_petugas`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -90,7 +91,7 @@ CREATE TABLE `petugas` (
 
 LOCK TABLES `petugas` WRITE;
 /*!40000 ALTER TABLE `petugas` DISABLE KEYS */;
-INSERT INTO `petugas` VALUES (2,'Mudi Bin Mujib','mujib_xixi','1212','Bayam');
+INSERT INTO `petugas` VALUES (3,'Mudi Bin Mujib','mudi_xixi','a01610228fe998f515a72dd730294d87','Supervisor'),(4,'mudi','mudi','81dc9bdb52d04dc20036dbd8313ed055','12');
 /*!40000 ALTER TABLE `petugas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -108,7 +109,7 @@ CREATE TABLE `produk` (
   `harga` int(11) NOT NULL,
   `foto_produk` varchar(255) NOT NULL,
   PRIMARY KEY (`id_produk`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -117,7 +118,7 @@ CREATE TABLE `produk` (
 
 LOCK TABLES `produk` WRITE;
 /*!40000 ALTER TABLE `produk` DISABLE KEYS */;
-INSERT INTO `produk` VALUES (5,'Ayam1','Ayam2				',12000,'uploads/kermit3.jpg'),(6,'Ayam12','Ayam',12000,'uploads/cookiemonster.png');
+INSERT INTO `produk` VALUES (7,'Ayam','Ayam hidup.',12000,'uploads/ayam.jpg'),(8,'Ayam','Ayam Hidup 2.',180000,'uploads/turkey.png');
 /*!40000 ALTER TABLE `produk` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -134,7 +135,7 @@ CREATE TABLE `transaksi` (
   `id_petugas` int(11) NOT NULL,
   `tgl_transaksi` date NOT NULL,
   PRIMARY KEY (`id_transaksi`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -143,6 +144,7 @@ CREATE TABLE `transaksi` (
 
 LOCK TABLES `transaksi` WRITE;
 /*!40000 ALTER TABLE `transaksi` DISABLE KEYS */;
+INSERT INTO `transaksi` VALUES (1,1,4,'2021-10-16'),(2,1,3,'2021-10-16'),(3,1,3,'2021-10-16'),(4,1,3,'2021-10-16'),(5,1,3,'2021-10-16');
 /*!40000 ALTER TABLE `transaksi` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -155,4 +157,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-15  5:28:06
+-- Dump completed on 2021-10-16 14:37:05
