@@ -32,7 +32,7 @@ if (empty($_SESSION['id_petugas'])) {
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<ul class="navbar-nav w-100 mb-2 mb-lg-0">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="/home.php">Home</a>
 						</li>
@@ -48,11 +48,10 @@ if (empty($_SESSION['id_petugas'])) {
 								<li><a class="dropdown-item" href="keranjang.php">Ingin dibeli</a></li>
 							</ul>
 						</li>
+						<li class="nav-item ms-lg-auto">
+							<a class="nav-link" href="/logout.php">Logout</a>
+						</li>
 					</ul>
-					<form class="d-flex">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
-					</form>
 				</div>
 			</div>
 		</nav>
