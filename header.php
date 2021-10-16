@@ -37,19 +37,15 @@ if (empty($_SESSION['id_petugas'])) {
 							<a class="nav-link active" aria-current="page" href="/home.php">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/tampil_pelanggan.php">Pelanggan</a>
+							<a class="nav-link" href="/beranda.php">Beranda</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Keranjang
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Sudah dibeli</a></li>
-								<li><a class="dropdown-item" href="#">Ingin dibeli</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="#">Semua</a></li>
+								<li><a class="dropdown-item" href="histori_pembelian.php">Sudah dibeli</a></li>
+								<li><a class="dropdown-item" href="keranjang.php">Ingin dibeli</a></li>
 							</ul>
 						</li>
 					</ul>
