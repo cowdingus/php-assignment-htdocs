@@ -1,6 +1,8 @@
 <?php
 include "db.php";
 
+include "filter_admin.php";
+
 $query = "SELECT * FROM produk WHERE id_produk = ?";
 
 if ($stmt = $conn->prepare($query)) {

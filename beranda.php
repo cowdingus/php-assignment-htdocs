@@ -1,5 +1,7 @@
 <?php
 include "header.php";
+
+include "filter_kasir.php";
 ?>
 <h2>Ayam</h2>
 <div class="row">

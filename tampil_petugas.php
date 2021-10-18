@@ -1,3 +1,6 @@
+<?php
+include "filter_admin.php";
+?>
 <!DOCTYPE html>
 <html>
 

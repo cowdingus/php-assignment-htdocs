@@ -1,5 +1,7 @@
 <?php
 include "header.php";
+
+include "filter_kasir.php";
 ?>
 <h2>Keranjang</h2>
 <table class="table table-hover striped">

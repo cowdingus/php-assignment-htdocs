@@ -1,6 +1,8 @@
 <?php
 include "db.php";
 
+include "filter_admin.php";
+
 $query = "SELECT * FROM petugas WHERE id_petugas = ?";
 
 if ($stmt = $conn->prepare($query)) {

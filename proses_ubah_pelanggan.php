@@ -1,6 +1,8 @@
 <?php
 include "utilities.php";
 
+include "filter_kasir.php";
+
 if ($_POST) {
 	$id = trim($_POST["id"]);
 	$nama = trim($_POST["nama"]);

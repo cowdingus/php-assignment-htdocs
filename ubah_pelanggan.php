@@ -1,6 +1,8 @@
 <?php
 include "db.php";
 
+include "filter_kasir.php";
+
 $query = "SELECT * FROM pelanggan WHERE id_pelanggan = ?";
 
 if ($stmt = $conn->prepare($query)) {

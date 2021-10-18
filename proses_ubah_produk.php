@@ -1,6 +1,8 @@
 <?php
 include "utilities.php";
 
+include "filter_admin.php";
+
 if ($_POST) {
 	$id = trim($_POST["id"]);
 	$nama = trim($_POST["nama_produk"]);

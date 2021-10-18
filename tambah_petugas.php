@@ -1,6 +1,8 @@
 <?php
 include "utilities.php";
 
+include "filter_admin.php";
+
 if ($_POST) {
 	$nama = trim($_POST["nama_petugas"]);
 	$username = trim($_POST["username"]);
