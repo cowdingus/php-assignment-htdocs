@@ -36,6 +36,7 @@ if ($_POST) {
 				$stmt->fetch();
 				$_SESSION['id_petugas'] = $id_petugas;
 				$_SESSION['nama_petugas'] = $nama_petugas;
+				$_SESSION['level'] = $level;
 
 				header("location: home.php");
 			} else {
