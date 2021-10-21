@@ -5,3 +5,6 @@ A school assignment to make an online shop website using php, without any extern
 1. `username`:`password`:privilege
 2. `mudi_xixi`:`1212`:admin
 3. `mudi`:`1234`:kasir
+
+## Known security vulnerabilities
+Unfiltered uploads on tambah_produk.php & ubah_produk.php
